@@ -1,0 +1,93 @@
+.flex {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:60px;
+  box-shadow: 0 -3px 5px -3px rgba(128,100,83,1);
+  padding-bottom: env(safe-area-inset-bottom);
+  background: #ffffff;
+}
+
+.link {
+  padding: 20px 25px 20px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #A29279;
+  cursor: pointer;
+  font-size: 12px;
+
+}
+
+.orderCount{
+  position: absolute;
+  font-size: 9px;
+  color: white;
+  border: 2px solid red;
+  border-radius: 50% !important;
+  background-color: red;
+  right: -6px;
+  top: 3px;
+  height: 13px;
+  width: 13px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alertStatus{
+  position: absolute;
+  font-size: 9px;
+  color: white;
+  border: 2px solid red;
+  border-radius: 50% !important;
+  background-color: red;
+  right: -6px;
+  top: 2px;
+  height: 13px;
+  width: 13px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link:hover {
+  color: #4e3b2e;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+.font {
+  font-size: 23px;
+  position:relative;
+}
+
+.active {
+  color: #4e3b2e  !important;
+}
+
+
+@media only screen and (max-width: 414px) {
+  .link {
+    padding: 10px;
+  }
+  .flex{
+    position:fixed;
+  }
+
+}
+
+@media only screen and (max-width: 320px) {
+  .link {
+    padding: 10px 8px 10px 8px;
+  }
+}

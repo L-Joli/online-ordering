@@ -1,0 +1,97 @@
+.ordersWrap{
+    display:flex;
+    flex-direction: column;
+    margin:15px 0px 15px 0px;
+    padding:35px 50px 30px 50px; 
+    background: #80645312;
+    position:relative;
+    .orderProduct{
+        font-weight:bold;
+        font-size:18px;
+        margin-right: 5px;
+    }
+    .orderOptionDetails{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .orderDate{
+    margin-top:20px;
+    display: flex;
+    .time{
+        margin-left:10px;
+    }
+    }
+    .heart{
+        position:absolute;
+        top:18px;
+        right:18px;
+        font-size:23px
+    }
+    .badge{
+        padding: 0 6px;
+        display: flex;
+        align-items: center;
+        height: 21px;
+        background: transparent;
+        color:inherit;
+        border: 1px rgba(162, 146, 121, 0.701) solid;
+    }
+    .bottomMargin{
+        margin-bottom: 10px;
+    }
+    .total{
+        margin-right:5px;
+    }
+    .reorderBtn{
+        position:absolute;
+        bottom:20px;
+        right:20px;
+        background: #5C7550;
+        border-color:#5C7550;
+    }
+    .reorderBtn:hover{
+        background: #798E6F!important;
+        border-color:#798E6F;
+    }
+    .reorderBtn:active{
+        background: #4C6042 !important;
+    }
+    .status{
+        position: absolute;
+        display:flex;
+        flex-direction: row;
+        font-weight: bold;
+        bottom:30px;
+        right:30px;
+        span { margin-right:0.3em }
+        .pending{
+            border-color:rgb(236, 136, 21);
+            background: rgb(236, 136, 21);
+            color:white;
+            width: 60px;
+            text-align: center;
+        }
+        .Finished{
+            background: #5C7550;
+            border-color:#5C7550;
+            color:white;
+            width: 60px;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .customerOrderId {
+      margin-bottom:10px;
+    }
+    .ordersWrap {
+        padding: 35px 30px 30px 30px;
+        .amount{
+            display:flex;
+           justify-content: flex-end;
+           margin-top:10px;
+        }
+    }
+  }

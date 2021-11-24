@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "coffee1",
+            "dialect": "PostgreSQL",
+            "name": "test",
+            "password": "postgres",
+            "port": 5432,
+            "server": "localhost",
+            "username": "postgres"
+        }
+    ],
+    "editor.fontSize": 11
+}

@@ -1,0 +1,54 @@
+select "order".id, 
+users.name AS user,  
+taken_time, amount, 
+quantity, 
+product.name AS product, 
+option.name AS option, 
+product.price AS product_price, 
+extra_charge, 
+order_detail.id
+from "order" 
+join users on users.id = users_id 
+join order_detail on order_id = "order".id 
+join product on product_id = product.id 
+join order_detail_option on order_detail.id = order_detail_id 
+join option on option_id = option.id 
+join product_option_price on 
+product_option_price.product_id = product.id 
+and option.id = product_option_price.option_id 
+WHERE users.id = '46'
+and finished = true 
+and delivered = true 
+order by taken_time desc;
+
+AND users.id = '46'
+
+where finished = true 
+where finished = true 
+and 
+
+
+
+
+select * from product_option_price;
+
+select product_id, count(product_id) from product_option_price group by product_id;
+select option_id, count(option_id) from product_option_price group by option_id;
+
+select distinct(product_id) from product_option_price where option_id = '494';
+
+select a.order_id, a.product_id, c.* 
+from order_detail a
+inner join order_detail_option b
+on a.id = b.order_detail_id 
+inner join product_option_price c 
+on b.option_id = c.option_id 
+where a.product_id = c.product_id;
+
+select a.order_id, a.product_id, b.id, c.* 
+from order_detail a
+inner join product b
+on a.product_id = b.id 
+inner join product_option_price c 
+on b.id = c.product_id 
+where a.order_id = '15';

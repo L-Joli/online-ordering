@@ -1,0 +1,186 @@
+.signInLink {
+  color: #806453;
+}
+
+.signInLink:hover {
+  color: #4e3b2e;
+}
+
+.beforeLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  left: 0;
+}
+
+.signInLink {
+  font-size: 30px;
+}
+
+.myPoints {
+  display:flex;
+  justify-content: center;
+  font-size: 15px;
+  .pointsStyle{
+    width:90%;
+    border-bottom: 1px solid #8064534f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 0px 15px 0px;
+  }
+  .points{
+   font-size:35px;
+   font-weight: bold;
+  }
+}
+
+.progress {
+  width: 80%;
+}
+
+.progressWrap {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  p{
+    font-size: 20px;
+    font-weight: bold;
+    padding:5px 5px 10px 5px;
+  }
+  
+
+}
+
+.donationWrap {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  height: 30%;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+.donation {
+  border: 1px solid #5C7550;
+  width: 70%;
+  padding:30px;
+  margin:10px 0 10px 0;
+  background: #5C7550;
+  position:relative;
+  color:#fff;
+  font-size:20px;
+  p{
+    position:absolute;
+    color:#DDD7CE;
+    right:10px;
+    bottom:5px;
+    font-size:11px;
+
+  }
+}
+
+.donation:active{
+  background: #6E8A75;
+  border: 1px solid #6E8A75;
+}
+
+.donation:hover{
+  background: #607F68 !important;
+  border: 1px solid #607F68 ;
+}
+
+
+.circleProgress{
+  *, *:before, *:after {
+    box-sizing: border-box;
+    outline: none;
+  }
+  $bgColor:#020438;
+  $boxColor:#020438;
+  $waterFColor:rgb(12, 123, 47);
+  $waterBColor:#ffffff;
+  
+  body {
+    background:$bgColor;
+    font: 14px/1 'Open Sans', helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .box{
+    height: 280px;
+    width: 280px;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 50%;
+    margin-top: 50%;
+    margin-bottom: -50%;
+    background: $boxColor;
+    border-radius:100%;
+    overflow: hidden; 
+    .percent{
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index:3;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      display: -webkit-flex;
+      align-items:center;
+      justify-content:center; 
+      color:#cfc0aac4;
+      font-size:64px;
+    } 
+    .water{
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index:2;
+      width: 100%;
+      height: 100%;
+      transform:translate(0,100%);
+      background:$waterFColor;
+      transition: all .3s;
+      &_wave{
+        width: 200%;
+        position: absolute;
+        bottom: 100%;
+        &_back {
+          right: 0;
+          fill: $waterBColor;
+          animation: wave-back 1.4s infinite linear;
+        }
+        &_front {
+          left: 0;
+          fill: $waterFColor;
+          margin-bottom: -1px;
+          animation: wave-front .7s infinite linear;
+        }
+      }
+    }
+  }
+  @keyframes wave-front {
+    100% {
+      transform: translate(-50%, 0);
+    }
+  }
+  
+  @keyframes wave-back {
+    100% {
+      transform: translate(50%, 0);
+    }
+  }
+
+
+}

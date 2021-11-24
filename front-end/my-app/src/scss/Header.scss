@@ -1,0 +1,77 @@
+.header {
+  box-shadow: 0 3px 6px -3px rgba(128,100,83,1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 90px;
+  z-index:2;
+  background: #ffffff;
+}
+
+.header-title {
+  font-size: 33px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.icon {
+  font-size: 35px;
+  margin-left: 20px;
+  padding: 5px 10px 10px 10px;
+}
+
+.firstPage {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  h1 {
+    padding: 0px;
+  }
+}
+
+h1 {
+  padding: 20px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 15px;
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+
+.orderBtns {
+  position:absolute;
+  bottom: 0;
+  left:0;
+  right:0;
+  display:flex;
+  justify-content: space-around;
+}
+.orderBar{
+  padding: 0px 10px 0px 10px;
+  color: #806453;
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+.orderBar:hover{
+  text-decoration: none;
+  color: #4e3b2e;
+}
+.orderActive {
+  border-bottom: 3px solid #5C7550;
+}
+
+
+@media only screen and (max-width: 414px) {
+.header{
+  position:fixed;
+}
+
+}

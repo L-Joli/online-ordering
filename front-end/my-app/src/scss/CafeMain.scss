@@ -1,0 +1,171 @@
+.cafeMain {
+  display: flex;
+}
+
+.sideBar {
+  width: 96px;
+  height: 100vh;
+  padding-top: 90px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  position:fixed;
+  z-index:2;
+}
+
+.btns {
+  color: #806453;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  height: 33.4%;
+}
+
+.btns:hover {
+  color: #39291f;
+  text-decoration: none;
+}
+
+.activeBtn {
+  background: #806453;
+  color: #ffffff;
+}
+
+.cafeContent {
+  flex: 1;
+  padding-top: 90px;
+  position:absolute;
+  left:80px;
+  right:0;
+  height: 100%;
+  overflow-y: auto;
+
+  p {
+    padding: 35px 55px;
+  }
+}
+
+.cafeOrders {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  flex-flow: column;
+  align-items: center;
+}
+
+.orderId {
+  border-right: 1px solid #8064537c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order {
+  background: #ffffff;
+  width: 90%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderDetails {
+  background: #ffffff;
+  width: 90%;
+  display: flex;
+  border-top: 1px solid #8064537c;
+  padding: 20px 0px 20px 0px;
+  flex-flow: column;
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.product {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.details {
+  display: flex;
+  // flex:1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.time{
+  display:flex;
+  .timeMargin{
+    margin-left:5px;
+  }
+}
+
+
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding:5px 0px 5px 0px;
+}
+
+.wrap {
+  width: inherit;
+  display: flex;
+}
+
+.firstLine {
+  width: inherit;
+  display: flex;
+}
+
+.ok {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  button{
+    display: flex;
+    justify-content: center;
+    font-size:12px;
+    font-weight:bold;
+    background: #4e3b2e ;
+    border:#4e3b2e ;
+    margin-right: 20px;
+  }
+  button:hover{
+    background: #4e3b2edd ;
+  }
+}
+
+.ok:hover {
+  color: #806453;
+}
+
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailoption{
+  color: #806453ac;
+}
+
+@media only screen and (max-width: 625px) {
+  .btns {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .sideBar {
+    width: 80px;
+  }
+}

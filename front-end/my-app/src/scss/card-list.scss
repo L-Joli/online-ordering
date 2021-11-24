@@ -1,0 +1,64 @@
+.card {
+  background-color: rgb(245, 242, 239);
+}
+
+.card-list {
+    font-size: 17px; 
+
+    .card-brand-icon {
+        font-size: 40px;       
+    }
+    .card-brand-name {
+        font-weight: 600;
+    }
+}
+
+.a-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-bottom: 1px solid #7457441e;
+}
+
+//card styling color
+.visa{
+    color: rgb(24, 4, 155);
+}
+
+.amex {
+    color:#1F5896;
+}
+
+.masterCard {
+    color: #E98702;
+}
+//card styling color
+
+.select-payment-method {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    position: absolute;
+    bottom: 125px;
+    border-top:1px #806453 solid;
+    background-color: #fff;
+    
+        .title-payment-method{
+            padding-left: 15px;
+        }
+
+        .select-payment-forward-btn{
+            font-size: 25px;
+            color: gray;
+        }
+}
+
+.select-payment-method:active {
+    background: #F9F6F1;
+}
+
+.pay-btn:active {
+    background: rgba(92, 117, 80, 0.879);
+}

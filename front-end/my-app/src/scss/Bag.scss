@@ -1,0 +1,170 @@
+.bag{
+    padding-bottom: 105px;
+}
+
+.ScheduleTime {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+    
+    .pick-up-now {
+        width: 35% ;
+        height: 80px;
+        background-color: #8064535b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .schedule {
+        width: 35% ;
+        height: 80px;
+        background-color: #8064535b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .picked {
+        background-color: rgba(213, 229, 32, 0.694);
+    }
+}
+
+.container-fluid { 
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+
+    .check-out {
+        display: flex;
+    }
+}
+
+
+.bag-bottom {
+    width: 100%;
+    height: 65px;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    background-color:rgb(255, 255, 255) ;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    position: absolute;
+    bottom: 60px;
+    border-top:1px #806453 solid;
+}
+
+.pay-btn {
+    background-color:#5C7550 ;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    cursor:pointer;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px !important;
+
+}
+
+.style{
+    display:flex;
+    justify-content: center;
+    padding-right: 35px;
+}
+
+.productList{
+    padding-left:35px;
+
+    .productName{
+        font-size:20px;
+        font-weight: bold;
+    }
+
+    .optionDetails{
+        display: flex;
+        justify-content: space-between;
+        color:rgba(78, 59, 49, 0.564);
+        font-size:10px;
+    }
+}
+
+.bagItems{
+    background:#80645312;
+    margin: 0px 0px 10px 0px;
+    padding:20px 0px 20px 0px;
+    position:relative;
+    .badge{
+        padding: 0 6px;
+        display: flex;
+        align-items: center;
+        height: 21px;
+        background: transparent;
+        color:inherit;
+        border: 1px rgba(162, 146, 121, 0.701) solid;
+        margin-top:5px;
+    }
+    .fatimes{
+        font-size:22px;
+        cursor: pointer;
+        position:absolute;
+        right:10px;
+        top:0px;
+    }
+    .fatimes:hover{
+        color:#4e3b2eac;
+    }
+    .fatimes:active{
+        color:#4e3b2ee5;
+    }
+}
+
+
+
+
+
+
+.beforeLogin-bag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    left: 0;
+    font-size: 30px;
+  }
+
+  .selected.time {
+    padding-bottom: 3px;
+    padding-left: 20px;
+    text-align: center;
+    color: rgb(241, 155, 15);
+    font-weight: 600;
+    align-items: center;
+    span { margin-right:0.3em }
+  }
+
+
+
+  //Drawer
+  .ant-drawer-content-wrapper {
+      height: auto !important;
+  }

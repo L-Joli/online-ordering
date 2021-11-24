@@ -1,0 +1,25 @@
+{
+  "short_name": "The Nest",
+  "name": "The Nest Coffee Shop",
+  "icons": [
+    {
+      "src": "the_nest.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "the_nest.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "the_nest.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,202 @@
+.drinkItems {
+  height: 90vh;
+  margin-bottom:50px;
+  .drinkClose {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    background-color: rgba(221, 17, 17, 0);
+    border-color: white;
+    color: #4e3b2e;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .btn-secondary:not(:disabled):not(.disabled) .active,
+  .btn-secondary:not(:disabled):not(.disabled):active,
+  .show > .btn-secondary.dropdown-toggle {
+    background-color: #4e3b2e;
+    border-color: white;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: auto;
+    max-height: 100%;
+    border-radius: 50%;
+  }
+
+  .drinkChosen {
+    padding-top: 3px;
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+  }
+
+  .categoryName {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+
+  //   .drinkItem {
+  //     display: flex;
+  // display: grid;
+  // grid-template-columns: 200px 200px 200px 200px;
+  // grid-template-rows: 40px 40px,40px;
+
+  // .itemTrue{
+  //     margin-left: 5px;
+  //     margin-top: 3px;
+
+  // }
+
+  // .active, .itemTrue:hover {
+  //     background:rgb(14, 106, 226);;
+  //     border-color: rgb(14, 106, 226);;
+  //     color: white;
+  // }
+
+  .optionBtnWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 10px 12px;
+
+    .itemTrue {
+      background: #a2927900;
+      border: 1px solid #a29279;
+      color: #4e3b2e;
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+    .active {
+      background-color: #a29279;
+      border-color: #a29279;
+      color: #fff !important;
+    }
+    .btn-outline-primary:not(:disabled):not(.disabled).active,
+    .btn-outline-primary:not(:disabled):not(.disabled):active,
+    .show > .btn-outline-primary.dropdown-toggle {
+      background-color: #a29279;
+      border-color: #a29279;
+    }
+
+    .optionExtraCharge {
+      font-size: 12px;
+      margin-left: 5px;
+    }
+  }
+
+  .change-qty {
+    display: flex;
+    height: 35px;
+    .increaseButton {
+      height: 35px;
+      width: 35px;
+      background-color: rgba(92, 117, 80, 0);
+      border-color: #5c7550;
+      margin-right: 10px;
+      border-radius: 50%;
+      padding: 0;
+      div {
+        font-size: 20px;
+        color: #5c7550;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div:active {
+        background-color: #5c7550;
+        color: #fff;
+        border-radius: 50%;
+      }
+    }
+
+    .qty {
+      padding-right: 10px;
+      padding-top: 7px;
+    }
+
+    .decreaseButton {
+      height: 35px;
+      width: 35px;
+      background-color: rgba(92, 117, 80, 0);
+      border-color: #5c7550;
+      margin-right: 10px;
+      border-radius: 50%;
+      padding: 0;
+      div {
+        font-size: 20px;
+        color: #5c7550;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div:active {
+        background-color: #5c7550;
+        color: #fff;
+        border-radius: 50%;
+      }
+    }
+
+    .drinkPrice {
+      position: absolute;
+      left: 10px !important;
+      font-size: 1.3em;
+      padding-top: 3px;
+      display: flex;
+      .HKD {
+        margin-right: 5px;
+      }
+    }
+
+    .drinkBag {
+      margin-top: 2px;
+      color: white;
+      background: #5c7550;
+      border-color: #5c7550;
+      height: 35px;
+      width: 100px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .menuList .card {
+    padding: 10px 10px 10px 10px;
+    .itemPrice {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+    .itemName {
+      font-size: 18px !important;
+      padding: 10px;
+    }
+  }
+}
+.modal-open .modal {
+   overflow-x: hidden; 
+   overflow-y: auto; 
+}
+
+.modal {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 320px) {
+  .menuList .card {
+    .itemName {
+      font-size: 14px !important;
+      padding: 5px;
+    }
+  }
+}

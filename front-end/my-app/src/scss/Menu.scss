@@ -1,0 +1,124 @@
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+  position: relative;
+  .drinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    .drinklink {
+      border-right: 1.5px #8064534f solid;
+      border-bottom: 1.5px #8064534f solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #806453;
+      cursor: pointer;
+      height: 100%;
+      background: #fff;
+    }
+    .activeDrinks {
+      font-weight: bold;
+    }
+  }
+  .menuList {
+    width: 80%;
+    position: absolute;
+    right: 0;
+    box-sizing: border-box;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow: auto;
+
+    .card:active {
+      background: #cfc0aa;
+    }
+
+    .card {
+      padding: 10px 20px 10px 20px;
+      border-radius: 0;
+      cursor: pointer;
+      background: #f5f2ef;
+      transition: 0.5s;
+      .itemsNavlink {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #4e3b2e;
+
+        img {
+          border-radius: 50px;
+        }
+
+        .itemName {
+          text-align: center;
+          font-weight: bold;
+          font-size: 20px;
+        }
+        .itemPrice {
+          text-align: center;
+          display: flex;
+          .HKD {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.last {
+  border-bottom: 0px !important;
+}
+
+.drinklink:hover {
+  color: #4e3b2e;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .menuList .card {
+    padding: 10px 10px 10px 10px !important;
+    .itemPrice {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+    .itemName {
+      font-size: 15px !important;
+      padding: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .menuList .card {
+    .itemName {
+      font-size: 14px !important;
+      padding: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .menu .drinks {
+    padding: 90px 0 60px 0;
+    position: fixed;
+  }
+
+  .menu .menuList {
+    padding: 90px 0 60px 0;
+    position: fixed;
+  }
+}
